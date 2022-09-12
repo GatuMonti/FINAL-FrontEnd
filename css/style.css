@@ -21,7 +21,7 @@
 body{
     width: 100vw;
     height: auto;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;    
 }
 
 
@@ -35,10 +35,9 @@ body{
     width: 100vw;
     min-width: 18rem;
     height: auto;
-    border: solid 1px black;
 }
 
-.menuMobile{
+.top i{
     font-size: 3rem;    
 }
 
@@ -82,17 +81,77 @@ body{
     display: none;
 }
 
+
+/*-------ESTILOS DEL MAIN-------*/
+.mid{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-width: 18rem;
+    height: auto;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+.midPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: auto;       
+}
+.graficos{
+    max-width: 27rem;
+    width: 100%;
+    padding-bottom: 10rem;
+}
+
+.midParrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 27.5rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.mid h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #232851; 
+    padding-bottom: .5rem;
+    line-height: 3rem;
+}
+
+.mid p{
+    font-weight: 500;
+    padding: 1.75rem 2.75rem;
+}
+
+
+
+
+
+
+
 /*#############################
 -----------ESTILOS-------------
 ------DISPLAYS DESKTOP---------
 ###############################*/
 
 @media(min-width:1440px){
-    .menuMobile{
+    .top i{
         display: none;
     }
 
     .mobileOff{
         display: unset;
+    }
+    .top{
+        padding-bottom: 4.5rem;
     }
 }
