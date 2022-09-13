@@ -8,8 +8,7 @@
 * {
     box-sizing: border-box;
     margin: 0px;
-    padding: 0px;    
-    
+    padding: 0px;       
 }
 
 /*#############################
@@ -28,9 +27,29 @@ body{
 
 
 /*-----ESTILOS DEL HEADER-----*/
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.8rem 2.81rem 2.25rem;
+    min-width: 280px;
+    max-width: 1110px;
+    height: auto;
+    margin: 0 auto;
+}
 
+.mobileOff{
+    display: none;
+}
 
-
+.top i{
+    color: #000000;
+    font-size: 3rem;    
+}
+.logo{
+    width: 30vw;
+    max-width: 12rem;
+}
 /*-------ESTILOS DEL MAIN-------*/
 
 
