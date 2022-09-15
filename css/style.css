@@ -288,8 +288,8 @@ body{
 }
 .avatarA:hover{
     animation: rodarA 1s ease-in-out alternate backwards;
-    
 }
+
 @keyframes rodarA{
     0%{
         transform: scale(1.1) ;
@@ -303,7 +303,9 @@ body{
     }
     
 }
-
+.pointer i{
+    display: none;
+}
 /*-------Seccion Simplify----------
 -------------------------------*/
 
@@ -388,6 +390,11 @@ body{
     border-radius: 3.125rem;
     border: none;
     margin: .5rem;
+}
+
+.final input:focus::placeholder{
+    color:#623485;
+    font-weight: 700;
 }
 
 .final input:focus{
@@ -483,6 +490,7 @@ body{
 
     .menuDesk{
         display: flex;
+        align-items: center;
         list-style: none;
     }
     .menuDesk a{
@@ -496,10 +504,28 @@ body{
     .menuDesk a:hover{
         color: #B9B9C1;
     }
-
+    .menuDesk li:last-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+    .menuDesk li:last-child a{
+        color:#B9B9C1;
+    }
+    .menuDesk i, 
+    .pointer i{
+        display: unset;
+        font-size: 1.25rem;
+        margin-top: -.5rem;
+        color:#232851;
+    }
     .top{
         padding-bottom: 7.125rem;
     }
+
+    
     /*-------ESTILOS DEL MAIN-------
     ################################*/
 
@@ -605,10 +631,10 @@ body{
 
     .avatarB:hover,
     .avatarC:hover{
-        animation: rodarA 1s ease-in-out alternate backwards;
+        animation: zoom 1s ease-in-out alternate backwards;
         
     }
-    @keyframes rodarA{
+    @keyframes zoom{
         0%{
             transform: scale(1.1) ;
             
@@ -622,6 +648,15 @@ body{
         
     }
 
+    .pointer i{
+        display: unset;
+    }    
+    .pointer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 /*-------Seccion Simplify----------
 -------------------------------*/
@@ -684,7 +719,6 @@ body{
     height: 10rem;
     padding: 0rem 0rem;
     order:2;
-    
 }
 
 .rsociales i{
