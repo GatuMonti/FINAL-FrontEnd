@@ -16,9 +16,12 @@
     <!--Aqui Empiesa el Header------------------------------>
     <!------------------------------------------------------>
     <header class="top">
-        <img class="logo" src="img/Header/logo.svg" alt="LOGO" />
+        <div class="logo">
+            <img class="logoimg" src="img/Header/logo.svg" alt="LOGO">
+            <!--TITULO PRINCIPAL-->
+            <h1>manage</h1>
+        </div>
         <i class="fa-sharp fa-solid fa-bars"></i>
-
         <nav class="mobileOff">
             <ul class="menuDesk">
                 <li><a href="#">Pricing</a></li>
@@ -28,7 +31,6 @@
                 <li><a href="#">Community</a></li>
             </ul>
         </nav>
-
         <div class="mobileOff">
             <button type="button" class="botonStarted">Get Started</button>
         </div>
@@ -37,56 +39,74 @@
     <!--Aqui Empiesa el MAIN------------------------------->
     <!----------------------------------------------------->
     <main class="contenedor">
+
+        <!--Aqui Comienza una Seccion------------------------------->
         <section class="principal">
-            <img class="graficos" src="img/Main/ilustration-intro.svg" alt="Graficos">
-            <div class="parrafoPrincipal">
-                <h2>Bring everyone together to build better products.</h2>
-                <p>
-                    Manage makes it simple for software teams to plan day-to-day tasks
-                    while keeping the large team goals in view
-                </p>
-                <button type="button" class="botonStarted">Get Started</button>
+            <div class="principalSuperior">
+                <img class="graficos" src="img/Main/ilustration-intro.svg" alt="Graficos">
+                <div class="parrafoPrincipal">
+                    <h2>Bring everyone together to build better products.</h2>
+                    <p>
+                        Manage makes it simple for software teams to plan day-to-day tasks
+                        while keeping the large team goals in view
+                    </p>
+                    <button type="button" class="botonStarted">Get Started</button>
+                </div>
             </div>
-            <div class="parrafoSecundario">
-                <h3>What´s different about Manage?</h3>
-                <p>
-                    Manage provides all the functionality your teas needs, without the
-                    complexity. Our software is tailor-made for modern digital product
-                    teams
-                </p>
-            </div>
-            <div class="lista">
-                <div class="track">
-                    <h4>
-                        <span>01</span>Track company-wide progress
-                    </h4>
-
-                    <p class="descripcion">
-                        See how your day-to-day tasks fit into the wider vision. Go from
-                        tracking progress at the milestone level all the way done to the
-                        smallest of details. Never lose sight of the bigger picture
-                        again.
+            <div class="principalInferior">
+                <div class="parrafoSecundario">
+                    <h3>What´s different about Manage?</h3>
+                    <p>
+                        Manage provides all the functionality your teas needs, without the
+                        complexity. Our software is tailor-made for modern digital product
+                        teams
                     </p>
                 </div>
-                <div class="track">
-                    <h4>
-                        <span>02</span>Advance built-in reports
-                    </h4>
-
-                    <p class="descripcion">
-                        Set internal delivery estimates and track progress toward company goals. Our customisable
-                        dashboard helps you build out the reports you need to keep key stakeholders informed.
-                    </p>
-                </div>
-                <div class="track">
-                    <h4>
-                        <span>03</span>Everything you need in one place
-                    </h4>
-
-                    <p class="descripcion">
-                        Stop jumping from one service to another to communicate, store files, track tasks and share
-                        documents. Manage offers an all-in-one team productivity solution.
-                    </p>
+                <div class="lista">
+                    <div class="track">
+                        <div class=tracktitulo>
+                            <div class="numero">
+                                01
+                            </div>
+                            <h4>
+                                Track company-wide progress
+                            </h4>
+                        </div>
+                        <p class="descripcion">
+                            See how your day-to-day tasks fit into the wider vision. Go from
+                            tracking progress at the milestone level all the way done to the
+                            smallest of details. Never lose sight of the bigger picture
+                            again.
+                        </p>
+                    </div>
+                    <div class="track">
+                        <div class=tracktitulo>
+                            <div class="numero">
+                                02
+                            </div>
+                            <h4>
+                                Advance built-in reports
+                            </h4>
+                        </div>
+                        <p class="descripcion">
+                            Set internal delivery estimates and track progress toward company goals. Our customisable
+                            dashboard helps you build out the reports you need to keep key stakeholders informed.
+                        </p>
+                    </div>
+                    <div class="track">
+                        <div class="tracktitulo">
+                            <div class="numero">
+                                03
+                            </div>
+                            <h4>
+                                Everything you need in one place
+                            </h4>
+                        </div>
+                        <p class="descripcion">
+                            Stop jumping from one service to another to communicate, store files, track tasks and share
+                            documents. Manage offers an all-in-one team productivity solution.
+                        </p>
+                    </div>
                 </div>
             </div>
             </div>
@@ -96,7 +116,7 @@
         <section class="said">
             <h3 class="tituloSaid">What they´ve said</h3>
             <div class="contenedorAvatares">
-                <div class="avatares">
+                <div class="avatarA">
                     <img src="img/Main/avatares/avatar-ali.png" alt="avatar" />
                     <h4>Ali Bravo</h4>
                     <p>
@@ -105,8 +125,8 @@
                     </p>
                 </div>
 
-                <div class="mobileOff">
-                    <div class="avatares">
+                
+                    <div class="avatarB">
                         <img src="img/Main/avatares/avatar-anisha.png" alt="avatar" />
                         <h4>Ali Bravo</h4>
                         <p>
@@ -115,7 +135,7 @@
                             cross-channel confusion and everyone is much more focused.”
                         </p>
                     </div>
-                    <div class="avatares">
+                    <div class="avatarC">
                         <img src="img/Main/avatares/avatar-richard.png" alt="avatar" />
                         <h4>Ali Bravo</h4>
                         <p>
@@ -124,7 +144,7 @@
                             stop recommending them to everyone i talk to!”
                         </p>
                     </div>
-                </div>
+                
             </div>
             <button type="button" class="botonStarted">Get Started</button>
         </section>
@@ -169,20 +189,22 @@
             </div>
 
             <div class="iconos">
-                <a class="face" href="https://facebook.com" target="_blank"><i
+                <div class="rsociales">
+                    <a class="face" href="https://facebook.com" target="_blank"><i
                         class="fa-brands fa-square-facebook"></i></a>
-                <a class="youtube" href="https://instagram.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                <a class="tweet" href="https://tweeter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a class="pint" href="https://ar.pinterest.com/" target="_blank"><i
+                    <a class="youtube" href="https://instagram.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="tweet" href="https://tweeter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="pint" href="https://ar.pinterest.com/" target="_blank"><i
                         class="fa-brands fa-pinterest"></i></a>
-                <a class="inst" href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="inst" href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <img class="logobot" src="img/Footer/Logobot.svg" alt="Logo">
             </div>
-            <img class="logobot" src="img/Footer/Logobot.svg" alt="Logo">
             <p class="copyright">
                 Copyright 2020. All Rights Reserved &copy;
             </p>
         </section>
-
+        
     </footer>
 </body>
 
