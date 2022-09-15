@@ -286,11 +286,21 @@ body{
 .avatares p{
     line-height: 1.5rem;    
 }
-.avatarA{
-    animation-name:
+.avatarA:hover{
+    animation: rodarA 1s ease-in-out alternate backwards;
+    
 }
-
 @keyframes rodarA{
+    0%{
+        transform: scale(1.1) ;
+        
+    }
+    35%{ 
+        transform:  scale(1.2) ;
+    }
+    70%{
+        transform:  scale(1);
+    }
     
 }
 
@@ -591,7 +601,26 @@ body{
     }
     .avatarC{
         order:2;
-}
+    }
+
+    .avatarB:hover,
+    .avatarC:hover{
+        animation: rodarA 1s ease-in-out alternate backwards;
+        
+    }
+    @keyframes rodarA{
+        0%{
+            transform: scale(1.1) ;
+            
+        }
+        35%{ 
+            transform:  scale(1.2) ;
+        }
+        70%{
+            transform:  scale(1);
+        }
+        
+    }
 
 
 /*-------Seccion Simplify----------
